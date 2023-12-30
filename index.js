@@ -11,8 +11,6 @@ app.use(express.json());
 // till here nothing on localhost:5555 so build routes
 // 404 means we don't have requested url, default route is /
 
-
-
 // Middleware for handling CORS POLICY
 // Option 1: Allow All Origins with Default of cors(*)
 // app.use(cors());
@@ -32,7 +30,7 @@ app.get('/',(request, response) =>{
 });
 
 // Middleware for prasing request body
-app.use('https://book-shop-mern.netlify.app/books',booksRoute);
+app.use('https://book-store-me.onrender.com//books',booksRoute);
   
 // connect backend -> we shift get request to then condition 
 // so only when database is connected then only we run server
