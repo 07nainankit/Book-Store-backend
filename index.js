@@ -24,7 +24,7 @@ app.use(
 );
 
 //first http route, CALLback function handle this request
-app.get('https://book-store-me.onrender.com/',(request, response) =>{
+app.get('https://book-store-me.onrender.com',(request, response) =>{
     console.log(request);
     return response.status(234).send('Welcome To BOOKSTORE');
 });
