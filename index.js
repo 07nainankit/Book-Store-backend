@@ -24,13 +24,13 @@ app.use(
 );
 
 //first http route, CALLback function handle this request
-app.get('https://book-store-me.onrender.com',(request, response) =>{
+app.get('/',(request, response) =>{
     console.log(request);
     return response.status(234).send('Welcome To BOOKSTORE');
 });
 
 // Middleware for prasing request body
-app.use('https://book-store-me.onrender.com/books',booksRoute);
+app.use('/books',booksRoute);
   
 // connect backend -> we shift get request to then condition 
 // so only when database is connected then only we run server
