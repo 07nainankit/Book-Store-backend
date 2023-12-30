@@ -19,7 +19,7 @@ app.use(express.json());
 // Option 2: Allow Custom Origins
 app.use(
   cors({
-    origin: ['https://book-shop-mern.netlify.app/','http://localhost:3000'],
+    origin: ['https://book-shop-mern.netlify.app','http://localhost:3000'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
   })
