@@ -32,7 +32,7 @@ app.get('/',(request, response) =>{
 });
 
 // Middleware for prasing request body
-app.use('/books',booksRoute);
+app.use('https://book-shop-mern.netlify.app/books',booksRoute);
   
 // connect backend -> we shift get request to then condition 
 // so only when database is connected then only we run server
